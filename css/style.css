@@ -27,3 +27,15 @@ body {
 #welcome {
   grid-row: 2 / 3;
 }
+
+#sidebar {
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-rows: 7.5vh 92.5vh;
+}
+
+#pages {
+  padding-top: 48px;
+  display: grid;
+  grid-auto-rows: 48px;
+}
