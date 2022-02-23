@@ -39,3 +39,22 @@ body {
   display: grid;
   grid-auto-rows: 48px;
 }
+
+#content {
+  display: grid;
+  grid-template-columns: auto min(33vw, 250px);
+  grid-template-rows: 48px 40% 48px 40%;
+}
+
+#announce-title {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#projects {
+  grid-row: 2 / 5;
+}
+
+#trend-title {
+  grid-column: 2;
+}
