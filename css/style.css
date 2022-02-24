@@ -9,8 +9,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: min(33vw, 250px) auto;
-  grid-template-rows: 7.5vh 15vh 77.5vh;
+  grid-template: 7.5vh 15vh 77.5vh / min(33vw, 250px) auto;
 }
 
 #header {
@@ -23,8 +22,7 @@ body {
 #topbar {
   grid-row: 1 / 2;
   display: grid;
-  grid-template-columns: 24px 50% auto 24px 64px 192px;
-  grid-template-rows: 7.5vh;
+  grid-template: 7.5vh / 24px 50% auto 24px 64px 192px;
   align-items: center;
   gap: 16px;
 }
@@ -36,8 +34,7 @@ body {
 #welcome {
   grid-row: 2 / 3;
   display: grid;
-  grid-template-columns: 128px auto 128px 128px 128px;
-  grid-template-rows: 2rem auto 24px;
+  grid-template: 2rem auto 24px / 128px auto 128px 128px 128px;
   margin-right: 64px;
   align-items: center;
 }
@@ -78,13 +75,12 @@ body {
 
 #content {
   display: grid;
-  grid-template-columns: auto min(33vw, 250px);
-  grid-template-rows: 48px 40% 48px 40%;
+  grid-template: 48px 40% 48px 40% / auto min(33vw, 250px);
 }
 
 #announce-title {
-  grid-column: 2;
-  grid-row: 1;
+
+  grid-area: 1 / 2;
 }
 
 #projects {
