@@ -2,7 +2,7 @@
   font-family: 'Roboto', sans-serif;
   --sidebar: #047857;
   --buttons: #10b981;
-  --content-bg: #e5e7eb;
+  --content-bg: #f3f4f6;
 }
 
 body {
@@ -90,6 +90,7 @@ body {
   display: grid;
   grid-template: 48px 40% 48px 40% / auto min(33vw, 250px);
   background-color: var(--content-bg);
+  padding-left: 16px;
 }
 
 #announce-title {
@@ -115,11 +116,50 @@ button {
   border-radius: 8px;
 }
 
-#projects div div button {
+#projects div button {
   background-color: rgba(0, 0, 0, 0);
   border: 0;
 }
 
 #sidebar * img[alt="An Icon"] {
   filter: invert(100%);
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15vw, 20vw));
+  margin-left: 16px;
+  gap: 16px
+}
+
+#projects > div {
+  display: grid;
+  grid-template-rows: 24px auto 35px;
+  grid-template-columns: auto 116px;
+  width: min(16vw, 450px);
+  border: 4px solid white;
+  border-radius: 8px;
+  background-color: white;
+  height: min(10vw, 300px);
+  padding-left: 12px;  
+  padding-right: 8px;
+  align-items: baseline;
+}
+
+
+h4 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  grid-column: 1 / -1;
+}
+
+#projects > div > p {
+  grid-column: 1 / -1;
+  height: min(calc(10vw - 59px), calc(300px-59px));
+  
+}
+
+#projects > div > div {
+  width: 116px;
+  grid-column: 2;
 }
