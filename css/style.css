@@ -22,6 +22,14 @@ body {
 
 #topbar {
   grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 24px 50% auto 24px 64px 192px;
+  margin-top: 22px;
+  gap: 16px;
+}
+
+#user-top {
+  margin-left: 8px;
 }
 
 #welcome {
@@ -39,16 +47,16 @@ body {
   grid-template-columns: 48px auto;
   align-items: center;
   gap: 8px;
-  padding-left: 8px;
+  margin-left: 8px;
 }
 
 #pages {
-  padding-top: 48px;
+  margin-top: 48px;
   display: grid;
   grid-auto-rows: 48px;
   grid-template-columns: 24px auto;
   gap: 16px;
-  padding-left: 16px;
+  margin-left: 16px;
 }
 
 #content {
