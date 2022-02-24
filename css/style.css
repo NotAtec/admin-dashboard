@@ -1,5 +1,7 @@
 :root {
   font-family: 'Roboto', sans-serif;
+  --sidebar: #047857;
+  --buttons: #10b981;
 }
 
 body {
@@ -54,6 +56,15 @@ body {
   grid-row: 1 / -1;
   display: grid;
   grid-template-rows: 7.5vh 92.5vh;
+  background-color: var(--sidebar);
+  color: white;
+}
+
+#sidebar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 #hero {
@@ -71,6 +82,7 @@ body {
   grid-template-columns: 24px auto;
   gap: 16px;
   margin-left: 16px;
+  align-items: center;
 }
 
 #content {
@@ -93,4 +105,19 @@ body {
 
 h2 {
   margin: 0;
+}
+
+button {
+  background-color: var(--buttons);
+  border: 2px solid var(--buttons);
+  border-radius: 8px;
+}
+
+div div div div div button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+}
+
+img[alt="An Icon"] {
+  filter: invert(100%);
 }
