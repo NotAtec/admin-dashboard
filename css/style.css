@@ -113,11 +113,11 @@ button {
   border-radius: 8px;
 }
 
-div div div div div button {
+#projects div div button {
   background-color: rgba(0, 0, 0, 0);
   border: 0;
 }
 
-img[alt="An Icon"] {
+#sidebar * img[alt="An Icon"] {
   filter: invert(100%);
 }
