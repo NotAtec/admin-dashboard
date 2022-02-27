@@ -103,6 +103,8 @@ body {
 
 #projects {
   grid-row: 2 / 5;
+  height: 100%;
+  overflow: auto;
 }
 
 #trend-title {
