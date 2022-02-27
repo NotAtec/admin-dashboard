@@ -29,6 +29,7 @@ body {
   grid-template: 7.5vh / 24px 50% auto 24px 64px 192px;
   align-items: center;
   gap: 16px;
+  padding-left: 8px;
 }
 
 #user-top {
@@ -197,4 +198,12 @@ hr {
 #projects div button {
   background-color: rgba(0, 0, 0, 0);
   border: 0;
+}
+
+input[type="search"] {
+  border: 1px solid var(--sidebar);
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
 }
