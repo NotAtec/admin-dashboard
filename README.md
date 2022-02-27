@@ -5,6 +5,8 @@ Learned to use CSS Grid mostly to spec, also implemented a scrolling feature. Co
 
 Built for [The Odin Project](https://www.theodinproject.com/) curriculum.
 
+[Live Preview](https://notatec.github.io/admin-dashboard/) <--
+
 ## Built With
 - HTML
 - CSS
