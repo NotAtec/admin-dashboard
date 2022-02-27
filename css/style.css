@@ -185,3 +185,16 @@ hr {
   border-radius: 8px;
   width: 95%;
 }
+
+#welcome button {
+  width: 98px;
+  height: 32px;
+  border-radius: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+#projects div button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+}
